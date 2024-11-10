@@ -11,6 +11,12 @@ projects = [
         "internal_link": "pbs-biologics-helper",
         "external_link": "https://cmcmaster-pbs-biologics-helper.hf.space"
     },
+    {
+        "name": "This Week in Rheumatology",
+        "description": "Weekly AI generated summaries of potentially interesting/important papers in rheumatology",
+        "internal_link": "this-week-in-rheumatology",
+        "external_link": "https://cmcmaster-this-week-in-rheumatology.hf.space"
+    }
 ]
 smooth_scroll = Script("""
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
