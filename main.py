@@ -332,7 +332,7 @@ def home():
         Section(
             H1("Contact Me"),
             P("I'm always open to new opportunities and collaborations. Reach out to me at:"),
-            P("Email: chris@rheumai.com.au"),
+            P("Email: admin@rheumai.com.au"),
             id="contact"
         ),
         cls="container"
