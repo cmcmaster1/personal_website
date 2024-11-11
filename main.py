@@ -15,7 +15,7 @@ projects = [
         "name": "This Week in Rheumatology",
         "description": "Weekly AI generated summaries of potentially interesting/important papers in rheumatology",
         "internal_link": "this-week-in-rheumatology",
-        "external_link": "https://cmcmaster-this-week-in-rheumatology.hf.space"
+        "external_link": "https://thisweekinrheumatology-production.up.railway.app"
     }
 ]
 smooth_scroll = Script("""
