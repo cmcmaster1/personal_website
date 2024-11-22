@@ -1,0 +1,14 @@
+[
+    {
+        "name": "PBS Biologics Helper",
+        "description": "An interactive tool designed to streamline the process of working with PBS biologics.",
+        "internal_link": "pbs-biologics-helper",
+        "external_link": "https://cmcmaster-pbs-biologics-helper.hf.space"
+    },
+    {
+        "name": "This Week in Rheumatology",
+        "description": "Weekly AI generated summaries of potentially interesting/important papers in rheumatology",
+        "internal_link": "this-week-in-rheumatology",
+        "external_link": "https://thisweekinrheumatology-production.up.railway.app"
+    }
+] 
