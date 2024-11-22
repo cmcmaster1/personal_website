@@ -10,5 +10,11 @@
         "description": "Weekly AI generated summaries of potentially interesting/important papers in rheumatology",
         "internal_link": "this-week-in-rheumatology",
         "external_link": "https://thisweekinrheumatology-production.up.railway.app"
+    },
+    {
+        "name": "GCA TAB Report Classifier",
+        "description": "A privacy-focused tool that runs entirely in your browser to classify temporal artery biopsy reports using AI. No data leaves your computer.",
+        "internal_link": "gca-tab-nlp",
+        "external_link": "https://gca-tab-nlp.vercel.app/"
     }
 ] 
