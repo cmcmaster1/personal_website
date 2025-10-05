@@ -1,6 +1,12 @@
 [
     {
-        "name": "PBS Biologics Helper",
+        "name": "PBS Biologics Helper (new)",
+        "description": "An interactive tool designed to streamline the process of working with PBS biologics.",
+        "internal_link": "https://pbs-biologics-helper",
+        "external_link": "rheum-biologics.up.railway.app"
+    },
+    {
+        "name": "PBS Biologics Helper (archived)",
         "description": "An interactive tool designed to streamline the process of working with PBS biologics.",
         "internal_link": "pbs-biologics-helper",
         "external_link": "https://cmcmaster-pbs-biologics-helper.hf.space"
