@@ -89,6 +89,7 @@ const theme = createTheme({
       styleOverrides: {
         html: {
           scrollBehavior: 'smooth',
+          scrollbarGutter: 'stable',
         },
         body: {
           minWidth: 320,

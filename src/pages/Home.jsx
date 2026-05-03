@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, Card, CardContent, Link, Stack, Typography } from '@mui/material';
+import { Alert, Box, Button, Card, CardContent, Link, Stack, Typography } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 import InsightsOutlinedIcon from '@mui/icons-material/InsightsOutlined';
@@ -31,6 +31,30 @@ const Home = () => {
 
   return (
     <PageShell>
+      <Alert
+        severity="info"
+        action={
+          <Button component={RouterLink} to="/ara-asm-2026" color="inherit" size="small">
+            Open planner
+          </Button>
+        }
+        sx={{
+          mb: { xs: 4, md: 5 },
+          border: '1px solid',
+          borderColor: 'primary.light',
+          backgroundColor: 'rgba(14, 93, 100, 0.08)',
+          color: 'text.primary',
+          '& .MuiAlert-icon': {
+            color: 'primary.main',
+          },
+        }}
+      >
+        <Typography component="span" sx={{ fontWeight: 750 }}>
+          ARA ASM 2026 planner is live:
+        </Typography>{' '}
+        find posters, events, and build a saved itinerary.
+      </Alert>
+
       <Box
         component="section"
         sx={{

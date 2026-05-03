@@ -6,6 +6,7 @@ const navItems = [
   { label: 'Home', path: '/' },
   { label: 'Blog', path: '/blog' },
   { label: 'Projects', path: '/projects' },
+  { label: 'ARA ASM 2026', path: '/ara-asm-2026' },
 ];
 
 const Navigation = () => {
