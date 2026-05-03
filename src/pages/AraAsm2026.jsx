@@ -30,7 +30,6 @@ import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 import LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
 import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import PageShell from '../components/PageShell';
 import { araPosters, araSessions, conference } from '../data/araAsm2026';
 
 const STORAGE_KEY = 'ara-asm-2026-itinerary';
@@ -602,7 +601,21 @@ const AraAsm2026 = () => {
   };
 
   return (
-    <PageShell maxWidth="xl" mainSx={{ py: { xs: 3, md: 5 } }}>
+    <Box
+      sx={{
+        minHeight: '100vh',
+        background:
+          'linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(247,248,246,0.98) 360px, #f7f8f6 100%)',
+      }}
+    >
+      <Box
+        sx={{
+          maxWidth: 1500,
+          mx: 'auto',
+          px: { xs: 2, sm: 3, lg: 4 },
+          py: { xs: 3, md: 5 },
+        }}
+      >
       <Box
         component="section"
         sx={{
@@ -698,8 +711,8 @@ const AraAsm2026 = () => {
         </Paper>
       </Box>
 
-      <Grid container spacing={3} sx={{ py: { xs: 4, md: 5 } }}>
-        <Grid item xs={12} lg={8}>
+      <Grid container spacing={3} sx={{ py: { xs: 3, md: 5 } }}>
+        <Grid item xs={12} lg={8} sx={{ order: { xs: 2, lg: 1 } }}>
           <Paper
             elevation={0}
             sx={{
@@ -1012,12 +1025,17 @@ const AraAsm2026 = () => {
           )}
         </Grid>
 
-        <Grid item xs={12} lg={4}>
+        <Grid item xs={12} lg={4} sx={{ order: { xs: 1, lg: 2 } }}>
           <Box
             component="aside"
             sx={{
               position: { lg: 'sticky' },
-              top: { lg: 96 },
+              top: { lg: 24 },
+              maxHeight: { lg: 'calc(100vh - 48px)' },
+              overflowY: { lg: 'auto' },
+              pr: { lg: 1 },
+              pb: { lg: 2 },
+              scrollbarGutter: { lg: 'stable' },
             }}
           >
             <Card>
@@ -1241,7 +1259,8 @@ const AraAsm2026 = () => {
           </Box>
         </Grid>
       </Grid>
-    </PageShell>
+      </Box>
+    </Box>
   );
 };
 

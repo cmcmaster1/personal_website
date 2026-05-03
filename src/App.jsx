@@ -1,16 +1,23 @@
 import React, { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { Box } from '@mui/material';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
 import Projects from './pages/Projects';
 import BlogPost from './pages/BlogPost';
 import ProjectRedirect from './pages/ProjectRedirect';
 import NotFound from './pages/NotFound';
-import PageShell from './components/PageShell';
 
 const AraAsm2026 = lazy(() => import('./pages/AraAsm2026'));
 
-const routeFallback = <PageShell maxWidth="md" mainSx={{ minHeight: '58vh' }} />;
+const routeFallback = (
+  <Box
+    sx={{
+      minHeight: '100vh',
+      backgroundColor: 'background.default',
+    }}
+  />
+);
 
 function App() {
   return (
